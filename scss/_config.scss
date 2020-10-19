@@ -1,0 +1,8 @@
+//this will not be compiled since the _ in the name.
+//It's a PARTIAL. Its to be imported into other files, but not compiled on its own.
+
+//Making variables with scss is easy! Just add a sigil before!
+$light-color: #f4f4f4;
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: rgb(85, 164, 201);
+$secondary-color: #6cebcb;
