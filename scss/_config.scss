@@ -4,5 +4,25 @@
 //Making variables with scss is easy! Just add a sigil before!
 $light-color: #f4f4f4;
 $font-stack: Arial, Helvetica, sans-serif;
-$primary-color: rgb(85, 164, 201);
+//$primary-color: rgb(85, 164, 201);
 $secondary-color: #6cebcb;
+$primary-color: #e0ffff;
+
+// Set text color based on bg-color
+// scss function
+
+@function set-text-color($color){
+    @if(lightness($color) > 70){
+        @return #333;
+    }
+    @else{
+        @return #fff;
+    }
+}
+
+// set background & text color mixin
+// mixins are like a function but they don't return anything
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}
