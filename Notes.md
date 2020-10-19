@@ -69,7 +69,7 @@ Similar to a loop in JavaScript, but a little different.
 ```in``` is like a ```for... of``` loop keep word ```of```.
 ```$iterable_list``` is the list to be looped through.
 
-It also looks like lists are declared with ```()``` rather than brackets.
+It also looks like lists are declared with ```()``` rather than square brackets.
 
 ```
 // Margin & padding classes
