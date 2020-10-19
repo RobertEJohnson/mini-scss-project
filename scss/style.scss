@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
 }
 
+.showcase__container{
+    @extend .container;
+}
+
 a{
     text-decoration: none;
 }
@@ -46,7 +50,7 @@ a{
         color: set-text-color($primary-color);
     }
 
-    &-content{
+    &__container__content{
         height: 100%;
         display: flex;
         align-items: center;
@@ -68,9 +72,4 @@ a{
     }
 }
 
-img {
-    width: 100%;
-}
-
-
-
+@import 'mobile';
