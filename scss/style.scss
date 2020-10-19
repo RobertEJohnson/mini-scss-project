@@ -20,8 +20,7 @@ a{
 }
 
 .showcase {
-    background-color: $primary-color;
-    color: #fff;
+    @include set-background($primary-color);
     height: 600px;
     
     nav{
@@ -44,7 +43,7 @@ a{
     }
 
     a{
-        color: white;
+        color: set-text-color($primary-color);
     }
 
     &-content{
